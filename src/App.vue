@@ -7,6 +7,9 @@ export default defineComponent({
 </script>
 
 <template>
-  <h1>Hello there</h1>
-  <v-text-field label="textfield" value="hie"></v-text-field>
+  <VApp>
+    <VMain>
+      <router-view />
+    </VMain>
+  </VApp>
 </template>
