@@ -8,8 +8,14 @@ export default defineComponent({
 
 <template>
   <VApp>
-    <VMain>
+    <VMain class="pa-4">
       <router-view />
     </VMain>
   </VApp>
 </template>
+
+<style lang="css">
+.pointer {
+  cursor: pointer;
+}
+</style>
