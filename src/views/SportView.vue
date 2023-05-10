@@ -50,6 +50,7 @@ export default defineComponent({
   methods: {
     redirectTo(href: string) {
       this.$router.push(href);
+      window.scrollTo(0, 0);
     },
   },
 });
