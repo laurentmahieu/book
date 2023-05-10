@@ -8,7 +8,13 @@ export default defineComponent({
 
 <template>
   <VApp>
-    <VMain class="pa-4">
+    <v-app-bar :elevation="2">
+      <v-btn variant="plain" @click="$router.push('/')">
+        <v-icon icon="fas fa-home" />
+      </v-btn>
+    </v-app-bar>
+
+    <VMain class="pa-4 mt-15">
       <router-view />
     </VMain>
   </VApp>
