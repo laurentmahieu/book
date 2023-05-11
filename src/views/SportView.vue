@@ -1,7 +1,7 @@
 <template>
   <v-row justify="center">
     <v-card
-      width="250"
+      width="300"
       v-for="(program, i) in programs"
       :key="`view-${i}`"
       class="ma-4 pointer"

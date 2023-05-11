@@ -22,7 +22,7 @@ export default defineComponent({
 <template>
   <v-row justify="center">
     <v-card
-      width="250"
+      width="300"
       v-for="(view, i) in VIEWS"
       :key="`view-${i}`"
       class="ma-4 pointer"
