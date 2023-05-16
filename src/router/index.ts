@@ -9,6 +9,7 @@ import KitchenView from "@/views/KitchenView.vue";
 import EssentialsView from "@/views/sport/EssentialsView.vue";
 import NfcView from "@/views/sport/NfcView.vue";
 import MaxSizeView from "@/views/sport/MaxSizeView.vue";
+import NfcWodViewVue from "@/views/sport/NfcWodView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -32,6 +33,11 @@ const router = createRouter({
       path: "/sport/nfc",
       name: "nfc",
       component: NfcView,
+    },
+    {
+      path: "/sport/nfc/session/:session_id",
+      name: "nfc_session",
+      component: NfcWodViewVue,
     },
     {
       path: "/sport/max_size",
