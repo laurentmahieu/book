@@ -1,8 +1,8 @@
-import armImg from "@/assets/img/views/sport/nfc/arm.png";
-import backImg from "@/assets/img/views/sport/nfc/back.png";
-import benchImg from "@/assets/img/views/sport/nfc/bench.png";
-import legImg from "@/assets/img/views/sport/nfc/leg.png";
-import shoulderImg from "@/assets/img/views/sport/nfc/shoulder.png";
+import armImg from "@/assets/arm.png";
+import backImg from "@/assets/back.png";
+import benchImg from "@/assets/bench.png";
+import legImg from "@/assets/leg.png";
+import shoulderImg from "@/assets/shoulder.png";
 
 export const NFC_SESSIONS = [
   {
