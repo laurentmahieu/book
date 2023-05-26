@@ -18,9 +18,9 @@
 <script lang="ts">
 import { defineComponent } from "vue";
 
-import essentialsMainImg from "../assets/essentialMain.png";
-import maxSizeMainImg from "../assets/maxSizeMain.png";
-import nfcProMasseMainImg from "../assets/nfcProMasseMain.png";
+import essentialsMainImg from "./assets/essentialMain.png";
+import maxSizeMainImg from "./assets/maxSizeMain.png";
+import nfcProMasseMainImg from "./assets/nfcProMasseMain.png";
 
 export default defineComponent({
   name: "SportView",
