@@ -1,6 +1,6 @@
 import kitchenImg from "@/assets/main.jpg";
 import sportImg from "@/assets/arnold.jpg";
-import disneyImg from "@/assets/Disney.jpg";
+import disneyImg from "@/assets/disney.jpg";
 
 const VIEWS = [
   {
