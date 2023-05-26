@@ -1,8 +1,8 @@
-import armImg from "@/assets/arm.png";
-import backImg from "@/assets/back.png";
-import benchImg from "@/assets/bench.png";
-import legImg from "@/assets/leg.png";
-import shoulderImg from "@/assets/shoulder.png";
+import armImg from "../assets/arm.png";
+import backImg from "../assets/back.png";
+import benchImg from "../assets/bench.png";
+import legImg from "../assets/leg.png";
+import shoulderImg from "../assets/shoulder.png";
 
 export const NFC_SESSIONS = [
   {
