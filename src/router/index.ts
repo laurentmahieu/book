@@ -3,7 +3,9 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "@/views/HomeView.vue";
 import SportView from "@/views/SportView.vue";
 import DisneyView from "@/views/DisneyView.vue";
+// Kitchen
 import KitchenView from "@/views/KitchenView.vue";
+import PizzaView from "@/views/kitchen/PizzaView.vue"
 
 // Sport
 import EssentialsView from "@/views/sport/EssentialsView.vue";
@@ -53,6 +55,11 @@ const router = createRouter({
       path: "/kitchen",
       name: "kitchen",
       component: KitchenView,
+    },
+    {
+      path: "/kitchen/pizza",
+      name: "pizza",
+      component: PizzaView,
     },
   ],
 });
