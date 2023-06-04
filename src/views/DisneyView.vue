@@ -31,12 +31,6 @@ export default defineComponent({
     return {
       merryGoRounds: [
         {
-          name: "Ratatouille : L'Aventure Totalement Toquée de Rémy",
-          parc: "Studio",
-          restriction: 0,
-          done: false,
-        },
-        {
           name: "The Twilight Zone Tower of Terror",
           parc: "Studio",
           restriction: 102,
@@ -58,18 +52,6 @@ export default defineComponent({
           name: "RC Racer",
           parc: "Studio",
           restriction: 120,
-          done: false,
-        },
-        {
-          name: "Blanche-Neige et les Sept Nains",
-          parc: "Classic",
-          restriction: 0,
-          done: false,
-        },
-        {
-          name: "Peter Pan's Flight",
-          parc: "Classic",
-          restriction: 0,
           done: false,
         },
         {
@@ -113,6 +95,12 @@ export default defineComponent({
           parc: "Classic",
           restriction: 140,
           done: false,
+        },
+        {
+          name: "Ratatouille : L'Aventure Totalement Toquée de Rémy",
+          parc: "Studio",
+          restriction: 0,
+          done: true,
         },
         {
           name: "Slinky Dog Zigzag Spin",
@@ -178,6 +166,18 @@ export default defineComponent({
           name: "Toy Soldiers Parachute Drop",
           parc: "Studio",
           restriction: 81,
+          done: true,
+        },
+        {
+          name: "Blanche-Neige et les Sept Nains",
+          parc: "Classic",
+          restriction: 0,
+          done: true,
+        },
+        {
+          name: "Peter Pan's Flight",
+          parc: "Classic",
+          restriction: 0,
           done: true,
         },
         {
