@@ -3,14 +3,18 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "@/views/HomeView.vue";
 import SportView from "@/views/SportView.vue";
 import DisneyView from "@/views/DisneyView.vue";
+
 // Kitchen
 import KitchenView from "@/views/KitchenView.vue";
-import PizzaView from "@/views/kitchen/PizzaView.vue"
+import PizzaView from "@/views/kitchen/PizzaView.vue";
 
 // Sport
 import EssentialsView from "@/views/sport/EssentialsView.vue";
-import NfcView from "@/views/sport/NfcView.vue";
+import EssentialsWodView from "@/views/sport/EssentialsWodView.vue";
+
 import MaxSizeView from "@/views/sport/MaxSizeView.vue";
+
+import NfcView from "@/views/sport/NfcView.vue";
 import NfcWodViewVue from "@/views/sport/NfcWodView.vue";
 
 const router = createRouter({
@@ -30,6 +34,11 @@ const router = createRouter({
       path: "/sport/essentials",
       name: "essentials",
       component: EssentialsView,
+    },
+    {
+      path: "/sport/essentials/day/:day_id",
+      name: "essentials_session",
+      component: EssentialsWodView,
     },
     {
       path: "/sport/nfc",
