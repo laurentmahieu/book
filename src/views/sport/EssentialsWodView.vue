@@ -49,7 +49,7 @@
               </v-col>
             </v-row>
           </div>
-          <v-btn color="success" class="mt-4" block @click="validate(exercice)">
+          <v-btn color="success" class="mt-4" block @click="validate">
             Validate
           </v-btn>
         </v-form>
@@ -62,6 +62,8 @@
 import { defineComponent } from "vue";
 
 import ESSENTIAL_SESSIONS from "@/const/essentialsSessions";
+import { getItemLocalStorage, setItemLocalStorage } from "@/utils/localStorage";
+
 type session = {
   id: number;
   title: string;
@@ -99,18 +101,28 @@ export default defineComponent({
 
   methods: {
     findSession() {
+      const sessions =
+        getItemLocalStorage("essentials_sessions") ?? ESSENTIAL_SESSIONS;
       this.session =
-        ESSENTIAL_SESSIONS.find(
-          (el) => el.id.toString() === this.$route.params.day_id
+        sessions.find(
+          (el: session) => el.id.toString() === this.$route.params.day_id
         ) ?? ({} as session);
     },
 
-    async validate(exercice: object) {
-      console.log("exercice: ", exercice);
-      console.log("this.$refs.form: ", this.$refs.form);
-      const { valid } = await this.$refs.form[this.tab].validate();
+    async validate() {
+      const { valid } = await this.$refs.form[this.tab].validate(); // this.tab ??
 
-      if (valid) alert("Form is valid");
+      if (valid) {
+        let sessions =
+          getItemLocalStorage("essentials_sessions") ?? ESSENTIAL_SESSIONS;
+        sessions = sessions.filter(
+          (el: session) => el.id.toString() !== this.$route.params.day_id
+        );
+        sessions.push(this.session);
+        setItemLocalStorage("essentials_sessions", sessions);
+
+        this.tab = this.tab + 1;
+      }
     },
   },
 });
