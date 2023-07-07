@@ -110,7 +110,9 @@ export default defineComponent({
     },
 
     async validate() {
-      const { valid } = await this.$refs.form[this.tab].validate(); // this.tab ??
+      const { valid } = await (this.$refs.form as { validate: Function }[])[
+        this.tab
+      ].validate(); // this.tab ??
 
       if (valid) {
         let sessions =
