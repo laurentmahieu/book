@@ -3,6 +3,7 @@ import { createRouter, createWebHistory } from "vue-router";
 import HomeView from "@/views/HomeView.vue";
 import SportView from "@/views/SportView.vue";
 import DisneyView from "@/views/DisneyView.vue";
+import MovieView from "@/views/MovieView.vue";
 
 // Kitchen
 import KitchenView from "@/views/KitchenView.vue";
@@ -69,6 +70,11 @@ const router = createRouter({
       path: "/kitchen/pizza",
       name: "pizza",
       component: PizzaView,
+    },
+    {
+      path: "/movie",
+      name: "movie",
+      component: MovieView,
     },
   ],
 });
